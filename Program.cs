@@ -6,13 +6,15 @@ public class TreinandoGenerics
         var teste1 = new Pessoa()
         {
             Nome = "Celso",
-            Idade = 26
+            Idade = 26,
+            Altura = 1.87
         };
 
         var teste2 = new Pessoa()
         {
             Nome = "Celso",
-            Idade = 26
+            Idade = 26,
+            Altura = 1.87
         };
 
         var teste3 = teste1;
@@ -22,6 +24,7 @@ public class TreinandoGenerics
         Console.WriteLine(ComparandoTipos.Comparar(teste1, teste3));
         Console.WriteLine(ComparandoTipos.Comparar(teste2.Nome, teste1.Nome));
         Console.WriteLine(ComparandoTipos.Comparar(teste2.Idade, teste1.Idade));
+        Console.WriteLine(ComparandoTipos.Comparar(teste2.Altura, teste3.Altura));
     }
 }
 public static class ComparandoTipos
@@ -50,5 +53,6 @@ public class Pessoa
 {
     public string Nome { get; set; }
     public int Idade { get; set; }
+    public double Altura { get; set; }
 }
 
