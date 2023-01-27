@@ -29,25 +29,13 @@ public class TreinandoGenerics
 }
 public static class ComparandoTipos
 {
-    public static bool Comparar(string value1, string value2)
-    {
-        return value1 == value2;
-    }
+    public static bool Comparar(string value1, string value2) => value1 == value2;
 
-    public static bool Comparar(int value1, int value2)
-    {
-        return value1 == value2;
-    }
+    public static bool Comparar(int value1, int value2) => value1 == value2;
 
-    public static bool Comparar(double value1, double value2)
-    {
-        return value1 == value2;
-    }
+    public static bool Comparar(double value1, double value2) => value1 == value2;
 
-    public static bool Comparar<T>(T value1, T value2)
-    {
-        return value1.Equals(value2);
-    }
+    public static bool Comparar<T>(T value1, T value2) => value1.Equals(value2);
 }
 public class Pessoa
 {
@@ -55,4 +43,3 @@ public class Pessoa
     public int Idade { get; set; }
     public double Altura { get; set; }
 }
-
