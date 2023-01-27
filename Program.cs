@@ -46,9 +46,5 @@ public static class ComparandoTipos
         return value1.Equals(value2);
     }
 }
-public class Pessoa
-{
-    public string Nome { get; set; }
-    public int Idade { get; set; }
-}
+
 
